@@ -7,10 +7,6 @@ void setup() {
 
 void draw() { 
 
-  if (frameCount % 180==0) {
-    scene=+1;
-  }
-  saveFrame("export-####.png");
 
   // alway clearing background 
   background(100);
@@ -219,6 +215,14 @@ void draw() {
     textSize(32);
     text("By: Owen Barney", 150, 600);
   }
+
+  if (frameCount % 180==0) {
+    scene+=1;
+    println("here");
+  }
+  saveFrame("export-####.png");
+
+
 }  
 
 
